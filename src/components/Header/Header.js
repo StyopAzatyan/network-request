@@ -7,7 +7,7 @@ const Header = () => {
         <div className="app-header">
             <nav>
                 <ul>
-                    <li>posts</li>
+                    <li>Posts</li>
                 </ul>
             </nav>
         </div>

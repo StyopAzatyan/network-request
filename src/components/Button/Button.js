@@ -5,7 +5,7 @@ import './Button.scss';
 const Button = () => {
     return (
         <button className="app-button">
-            
+            Click
         </button>
     )
 }
