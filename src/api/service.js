@@ -22,12 +22,17 @@ class Service {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 return resolve(this._request("GET", `/posts?_start=${start}&_limit=${limit}`))
-            }, 3000);
+            }, 100);
         })
     }
+    
 
     getAllPosts = () => {
         return this._request('GET', '/posts')
+    }
+
+    getPost = (id) =>{
+        return this._request('GET', `/posts/${id}`)
     }
 
     createPost = (data) => {

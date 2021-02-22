@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Post from '../../components/Post/Post';
 import requestData from "../../api/requestData"
 import Button from '../../components/Button/Button';
-import { getPosts } from '../.././api/service';
+import { getPosts } from '../../api/service';
 
 import service from '../../api/service'
 
@@ -20,7 +20,7 @@ export class Container extends Component {
         loading: true
     }
 
-
+    
     componentDidMount(){
             service.getPosts(this.state.start,limit)
             .then(data =>{
